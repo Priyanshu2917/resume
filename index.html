@@ -175,12 +175,100 @@
       .cta { justify-content: center; }
       .feature { grid-template-columns: 1fr; }
       .card { grid-column: span 6; }
+      header { padding: 12px 16px; }
+      nav a { margin: 0 8px; font-size: 13px; }
+      .section { padding: 0 18px; }
+      .btn { min-width: 120px; padding: 10px 16px; font-size: 14px; }
+    }
+
+    @media (max-width: 768px) {
+      .hero { margin: 60px auto 70px; padding: 0 16px; gap: 18px; }
+      .card { grid-column: span 6; }
+      h1 { font-size: clamp(28px, 5vw, 48px); }
+      .sub { font-size: 15px; }
+      .cta { gap: 10px; }
+      .btn { padding: 10px 14px; font-size: 13px; }
+      nav a { font-size: 12px; margin: 0 6px; }
     }
 
     @media (max-width: 640px) {
-      header { padding: 12px 14px; }
-      nav a { margin: 0 6px; font-size: 14px; }
-      .card { grid-column: span 12; }
+      header { padding: 10px 12px; }
+      .brand { font-size: 13px; }
+      .dot { width: 18px; height: 18px; }
+      nav a { margin: 0 4px; font-size: 11px; }
+      
+      h1 { font-size: 26px; line-height: 1.1; }
+      h2 { font-size: 20px; }
+      h3 { font-size: 17px; }
+      .eyebrow { font-size: 10px; }
+      .sub { font-size: 13px; line-height: 1.6; }
+      
+      .hero { margin: 50px auto 60px; padding: 0 14px; gap: 14px; }
+      .cta { gap: 8px; flex-direction: column; }
+      .btn { min-width: 100%; padding: 11px 13px; font-size: 12px; }
+      
+      .section { margin: 60px auto; padding: 0 14px; }
+      .grid { gap: 12px; }
+      .card { grid-column: span 12 !important; padding: 14px; border-radius: 16px; }
+      .card h3 { font-size: 16px; margin: 6px 0; }
+      .card p { font-size: 13px; }
+      .chip { font-size: 10px; padding: 5px 9px; margin-bottom: 10px; }
+      
+      .panel { padding: 16px; border-radius: 16px; min-height: auto; }
+      .feature { gap: 14px; }
+      .feature .panel h2 { font-size: 18px; }
+      .feature .panel h3 { font-size: 16px; }
+      .feature .panel p { font-size: 13px; }
+      .feature .panel ul { font-size: 13px; line-height: 1.6; }
+      
+      .marquee .track { padding: 10px 0; gap: 20px; font-size: 11px; }
+      
+      footer { margin: 60px auto 40px; padding: 0 14px; }
+      .foot { flex-direction: column; gap: 10px; padding-top: 14px; font-size: 12px; }
+      .foot > div:last-child { gap: 10px !important; }
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 22px; }
+      h2 { font-size: 18px; }
+      h3 { font-size: 15px; }
+      .eyebrow { font-size: 9px; }
+      .sub { font-size: 12px; }
+      
+      header { padding: 8px 10px; }
+      .brand { font-size: 12px; gap: 6px; }
+      .dot { width: 16px; height: 16px; }
+      nav { gap: 2px; }
+      nav a { margin: 0 3px; font-size: 10px; }
+      
+      .hero { margin: 40px auto 50px; padding: 0 12px; gap: 12px; }
+      .cta { gap: 6px; }
+      .btn { padding: 10px 12px; font-size: 11px; }
+      
+      .section { margin: 50px auto; padding: 0 12px; }
+      .grid { gap: 10px; }
+      .card { padding: 12px; border-radius: 14px; }
+      .card h3 { font-size: 14px; }
+      .card p { font-size: 12px; }
+      .chip { font-size: 9px; padding: 4px 8px; }
+      
+      .panel { padding: 14px; }
+      .marquee .track { padding: 8px 0; gap: 16px; font-size: 10px; }
+      
+      footer { margin: 50px auto 30px; padding: 0 12px; }
+      .foot { gap: 8px; padding-top: 12px; font-size: 11px; }
+    }
+
+    @media (max-width: 360px) {
+      h1 { font-size: 20px; }
+      .sub { font-size: 11px; }
+      header { padding: 6px 8px; }
+      .brand { font-size: 11px; }
+      nav a { font-size: 9px; margin: 0 2px; }
+      .btn { padding: 9px 10px; font-size: 10px; min-width: auto; }
+      .card { padding: 10px; }
+      .section { padding: 0 10px; }
+      .hero { padding: 0 10px; margin: 35px auto 45px; }
     }
 
     /* Reduced motion */
